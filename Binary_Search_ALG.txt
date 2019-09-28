@@ -1,0 +1,48 @@
+//BInary search algorithm 
+
+  
+
+ #include <iostream> 
+ using namespace std ; 
+  int BinarySearch ( int array[]  , int left , int right , int x ) // 
+  {
+
+
+
+//if still the array is bigger than 2
+ if(r>l)
+       {
+ 
+              int mid = l+(r-l)/2;
+         
+      if (x==mid) return mid ; // if the element it 's exactly in the middle 
+
+ 
+   if ( x > array[mid]) //the element its in the right array 
+ 
+return BinarySearch(array, array[mid+1] , right,x );
+
+  else return BinarySearch(array , mid[mid-1] , left, x  );
+
+        }
+
+
+ //in that moment the element has't been found in the array 
+ 
+ return -1 ; 
+     
+
+   } 
+
+
+
+
+
+
+ int main ()
+{
+
+
+
+return 0 ; 
+} 
